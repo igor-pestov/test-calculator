@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+.App {
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
+
+  header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background: #c10708 0% 0% no-repeat padding-box;
+
+    span {
+      text-align: center;
+      font: normal normal normal 18px/16px Varela Round;
+      letter-spacing: 0.54px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+  }
+
+  .content {
+    width: 740px;
+    height: 406px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 2px 6px 10px #00000029;
+    border: 0.5px solid #a4a4a4;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 29px 40px 45px 40px;
+
+    span {
+      font: normal normal normal 16px/16px Varela Round;
+      letter-spacing: 0px;
+      color: #a4a4a4;
+    }
+
+    input {
+      box-sizing: border-box;
+      width: 227px;
+      height: 36px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #a4a4a4;
+      border-radius: 2px;
+      letter-spacing: 0px;
+      margin-top: 10px;
+      padding: 11px 8px;
+
+      &::placeholder {
+        color: #A4A4A4;
+        font: normal normal normal 16px/16px Varela Round;
+      }
+
+      &:disabled {
+        border: 1px solid #C10708;
+      }
+    }
+
+    .computation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 60%;
+
+      .error {
+        color: #c10708;
+        margin: 15px;
+      }
+
+      button {
+        width: 227px;
+        min-height: 36px;
+        border: none;
+        background: #c10708 0% 0% no-repeat padding-box;
+        border-radius: 2px;
+        font: normal normal normal 16px/18px Varela Round;
+        letter-spacing: 0.16px;
+        color: #ffffff;
+        margin-top: 18px;
+      }
+    }
+
+    .result {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 40%;
+      border-top: 1px solid #C10708;
+      padding-top: 42px;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      min-width: 335px;
+      width: 87%;
+      padding: 29px 53px 45px 53px;
+    }
+  }
+}
